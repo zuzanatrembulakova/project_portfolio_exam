@@ -10,20 +10,31 @@ nav {
 .nav_menu {
     display: grid;
     margin-top: 50px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .4fr .6fr 1fr;
 }
 .menu_item1 {
-    grid-column: 1;
+    grid-column: 2;
     justify-self: end;
     font-size: 20px;
-    margin-right: 80px;
+    margin-right: 100px;
     text-shadow: 1px 1px 1px grey;
 }
 .menu_item2 {
-    grid-column: 2;
+    grid-column: 3;
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
     text-shadow: 1px 1px 1px grey;
+}
+.arrow_back{
+    grid-column: 1;
+    background: url(images/arrow.svg) no-repeat;
+    width: 66px;
+    height: 30px;
+    margin-right: 20px;
+    justify-self: end;
+    align-self:center;
+    cursor: pointer;
+    
 }
 .z_logo{
     background: url(images/z.svg) no-repeat;
@@ -32,7 +43,7 @@ nav {
     position: absolute;
     top: 15px;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -89px;
     z-index: -1;
 }
 
@@ -65,7 +76,7 @@ main {
 .intro_honeycombs_row1{
     grid-row: 1;
     display: grid;
-    grid-template-columns: .3fr .3fr .3fr;
+    grid-template-columns: .3fr .3fr .3fr .3fr;
     margin-top: -50px;
     column-gap: 20px;
     
@@ -86,7 +97,7 @@ main {
     grid-template-columns: .3fr .3fr .3fr .3fr;
     margin-left: auto;
     margin-right: auto;
-    margin-left: -90px;
+    margin-left: -112px;
     margin-top: -40px;
     column-gap: 20px;
 }
@@ -126,7 +137,7 @@ main {
     grid-template-columns: .3fr .3fr;
     margin-left: auto;
     margin-right: auto;
-    margin-left: -90px;
+    margin-left: -112px;
     margin-top: -40px;
     column-gap: 20px;
 }
@@ -237,6 +248,7 @@ main {
     margin-top: -50px;
 }
 
+.hex_project,
 .hex_basicux,
 .hex_basicanimation,
 .hex_basiccontent,
@@ -249,6 +261,14 @@ main {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.hex_basicux:hover,
+.hex_basicanimation:hover,
+.hex_basiccontent:hover,
+.hex_basicweb:hover{
+    text-decoration: underline;
+    
 }
 
 .hex1 {
@@ -294,7 +314,6 @@ main {
     position: relative;
     width: 200px;
     height: 115.47px;
-    background-color: #64C7CC;
     margin: 57.74px 0;
 }
 .hexagon:before,
@@ -307,12 +326,10 @@ main {
 }
 .hexagon:before {
     bottom: 100%;
-    border-bottom: 57.74px solid #64C7CC;
 }
 .hexagon:after {
     top: 100%;
     width: 0;
-    border-top: 57.74px solid #64C7CC;
 }
 
 .hex1, .hex_port1 {
@@ -465,7 +482,118 @@ main {
     border-top: 57.74px solid #BFD8D2;
 }
 
-/*-------------------------------------------------ABOUT ME------------------------------------------------*/
+.honeycomb_project{
+    grid-column: 1 / 4;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 0.55fr 1fr;
+    column-gap: 60px;
+}
+.hex_project{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self:end;
+    cursor: auto;
+}
+.project_heading{
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    font-weight: normal;
+    line-height: 1.6;
+    
+}
+.hex_project {
+    background-color: #F8F8F8;
+}
+.hex_project:before {
+    border-bottom: 57.74px solid #F8F8F8;
+}
+.hex_project:after {
+    border-top: 57.74px solid #F8F8F8;
+}
+
+.project_content{
+    margin-top: 50px;
+    grid-column: 1 / 4;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 0.01fr 1fr 1fr 0.01fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 50px;
+}
+
+.project_content2{
+    grid-column: 1 / 4;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+}
+
+.project_content3{
+    grid-column: 1 / 4;
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+}
+
+.project_content4{
+    grid-column: 1 / 4;
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+}
+
+.focus{
+    margin-top: 50px;
+    grid-column: 1;
+    text-align: justify;
+    padding-left: 170px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+.gains{
+    margin-top: 50px;
+    grid-column: 2;
+    text-align: justify;
+    padding-right: 170px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.focus_rw{
+    margin-top: 0px;
+    grid-column: 3;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 20px;
+    align-self: center;
+}
+.gains_rw{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 20px;
+    align-self: center;
+}
+
+.rw_screen1{
+    margin-top: 0px;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+}
+.rw_screen2{
+    grid-column: 3;
+    grid-row: 2;
+    width: 100%;
+}
+
+/*------------------------------------------------ABOUT ME------------------------------------------------*/
 
 .about_me_img {
     grid-column: 1 / 4;
@@ -516,7 +644,7 @@ footer {
     width: auto;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr .065fr 1fr;
 }
 
 .facebook{
@@ -535,4 +663,13 @@ footer {
     grid-column: 2;
     border-style: none;
     cursor: pointer;
+}
+.github{
+    background: url(images/github-icon_smaller.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    grid-column: 3;
+    border-style: none;
+    cursor: pointer;
+    align-items: flex-start;
 }
