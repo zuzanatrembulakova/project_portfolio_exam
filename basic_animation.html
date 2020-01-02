@@ -13,7 +13,6 @@
 
     <nav>
         <div class="nav_menu">
-            <div class="arrow_back" onclick="location.href='projects.html';"></div>
             <div class="menu_item1">
                 <p class="menu_selected"><a href="projects.html">PROJECTS</a></p>
             </div>
@@ -23,69 +22,105 @@
         </div>
         <div class="z_logo"></div>
     </nav>
-
+    
+    <div class="home_tab">
+        <img src="images/home.svg" onclick="location.href='index.html';" class="home_icon">
+    </div>
+    <div class="back_tab" onclick="location.href='projects.html';">
+        <img src="images/arrow.svg" onclick="location.href='projects.html';" class="arrow_back_icon">
+    </div>
+    
     <main>
 
         <div class="honeycomb_project">
             <div class="hexagon hex_project">BASIC ANIMATION</div>
             <h1 class="project_heading">
-                04.01.01 Sprite Animation On Background<br>
-                04.02.01 Javascript Controlled Animation<br>
-                04.03.01 Project Pool 1<br>
-                04.04.01 Onboarding
+                <a href="#animation_on_bg" class="submenu_item">04.01.01 Sprite Animation On Background</a><br>
+                <a href="#js_controlled_animation" class="submenu_item">04.02.01 Javascript Controlled Animation</a><br>
+                <a href="#project_pool_1" class="submenu_item">04.03.01 Project Pool 1</a><br>
+                <a href="#onbarding" class="submenu_item">04.04.01 Onboarding</a>
             </h1>
         </div>
-        
-        <div class="project_content">
-            <div class="focus">
-                <p>This assignment was focusing on creating sprite animation in illustrator. I was inspired by specific style of an artist and based on my inspiration I sketched my characters on paper and then I made the in illustrator. I made moodboard, so it would be easier for me to see my inspiration and design characters. I worked with different specific shapes and colours.<br><br>I design background, which consists of several layers and I put everything, character sprite and background, together in CSS. 
-                </p>
+
+        <div class="project_content" id="animation_on_bg">
+            
+            <div class="rw_screen1">
+            <div class="forest5">
+                <div class="forest4">
+                    <div class="forest3">
+                        <div class="forest6">
+                            <div class='forest2'>
+                                <div class='forest1'>
+                                    <div class='figure'></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            </div>
+            
+            <div class="focus">
+                This assignment was focusing on creating sprite animation in illustrator. I was inspired by specific style of an artist and based on my inspiration I sketched my characters on paper and then I made the in illustrator. I made moodboard, so it would be easier for me to see my inspiration and design characters. I worked with different specific shapes and colours.<br><br>I design background, which consists of several layers and I put everything, character sprite and background, together in CSS.
+            </div>
+            <img src="images/animation_charcters.svg" class="rw_screen2">
             <div class="gains">
-                <p>During this assignment I gained better skills while working with illustrator and making animation using @keyframes in CSS and I understood animation principles.   
+                <p>During this assignment I gained better skills while working with illustrator and making animation using @keyframes in CSS and I understood animation principles.
                 </p>
+                <br>
+                <a class="link_to_project" href="other_material/040101_Sprite-animation-on-a-background_zuzana.pdf" target="_blank">DOCUMENTATION</a>
             </div>
+            <p class="line" id="js_controlled_animation"></p>
         </div>
-        
-        <div class="project_content2">
-            <div class="focus">
+
+        <div class="project_content2" >
+            <div class="focus_1cl">
                 <p>The focus of the assignment was to create javascript controlled animation. I used my character from previous task and applied ten different animation created in CSS on it.<br><br>It had to be obvious for the user how to turn the animation on and off and which animation was currently running. I included a sound when pressing a button
-    
+
                 </p>
             </div>
-            <div class="gains">
+            <div class="gains_2cl">
                 <p>I learned implementing sound in CSS and gained better skill in CSS animations and in javascript.<br><br>While working on this assignment I was introduced to GitHub. I understood how to set up a project with Git and how GitHub works
-     
                 </p>
+                <br>
+                <a class="link_to_project" href="http://zuzka.dk/tenanimations/" target="_blank">ANIMATIONS</a>
             </div>
+            <p class="line" id="project_pool_1"></p>
         </div>
-        
-        <div class="project_content3">
-            <div class="focus">
-                <p>This was a one-day assignment where we worked in pairs. We were given several projects to choose from. Me and my peer decided to work on a Drum Machine where we created buttons which could be pressed using specific keys on one’s keyboard.<br><br>After pressing certain key, the sound is played. It also had to be clear for the user which sound is playing – which button is active. 
+
+        <div class="project_content3" >
+            <div class="focus_1cl">
+                <p>This was a one-day assignment where we worked in pairs. We were given several projects to choose from. Me and my peer decided to work on a Drum Machine where we created buttons which could be pressed using specific keys on one’s keyboard.<br><br>After pressing certain key, the sound is played. It also had to be clear for the user which sound is playing – which button is active.
 
                 </p>
             </div>
-            <div class="gains">
-                <p>I gained better skills with javascript – I learned how to play the sound after pressing keys on keyboard.<br><br>We were working in pairs and we had to be done with project in one day, so it was important to decide and work fast and effectively. 
+            <div class="gains_2cl">
+                <p>I gained better skills with javascript – I learned how to play the sound after pressing keys on keyboard.<br><br>We were working in pairs and we had to be done with project in one day, so it was important to decide and work fast and effectively.
 
                 </p>
+                <br>
+                <a class="link_to_project" href="http://zuzka.dk/poolproject1/" target="_blank">DRUM MACHINE</a>
             </div>
+            <p class="line"></p>
         </div>
-        
-        <div class="project_content4">
+
+        <div class="project_content4" id="onbarding">
+            <img src="images/onboarding1.svg" class="rw_screen1">
             <div class="focus">
-                <p>The focus of the assignment was to create interactive and animated website, which through gamification helps specific target audience.<br><br>We were working in teams of four. We made team canvas at the beginning where we distributed roles (Main coding done by me) for each member.<br><br>We finished the theme with this project and exhibition for teachers, other students and everyone interested. 
+                <p>The focus of the assignment was to create interactive and animated website, which through gamification helps specific target audience.<br><br>We were working in teams of four. We made team canvas at the beginning where we distributed roles (Main coding done by me) for each member.<br><br>We finished the theme with this project and exhibition for teachers, other students and everyone interested.
                 </p>
             </div>
+            <img src="images/onboarding2.svg" class="rw_screen2">
             <div class="gains">
                 <p>We improved our skills in coding – javscript and CSS especially and got better in illustrator. We learned how to make animated GIF in Photoshop which we included on social media to promote our website.<br><br>
-We gained new experiences while working in group, creating team canvas at the beginning was very helpful.  
-     
+                We gained new experiences while working in group, creating team canvas at the beginning was very helpful.
                 </p>
+                <br>
+                <a class="link_to_project" href="http://zuzka.dk/cpr/" target="_blank">ONBOARDING</a><br><br>
+                <a class="link_to_project" href="other_material/onboarding.pdf" target="_blank">DOCUMENTATION</a>
             </div>
         </div>
-        
+
     </main>
 
     <footer>
