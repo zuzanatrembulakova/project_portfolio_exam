@@ -1133,7 +1133,11 @@ footer {
         
         .menu_item2{
             grid-row: 2;
-            
+        }
+        
+        .z_logo{
+            margin-left: 0px;
+            left: 95px
         }
 
         .honeycombs_1row,
