@@ -4,7 +4,7 @@ body {
     grid-template-columns: 1fr;
 }
 
-/*--------------------------------COMMON & MENU-------------------------------------------*/
+/*--------------------------COMMON & MENU ------------------------------*/
 
 nav {
     height: 200px;
@@ -47,7 +47,7 @@ a:hover {
     font-weight: bold;
 }
 
-.link_in_text{
+.link_in_text {
     font-weight: bold;
 }
 
@@ -104,8 +104,81 @@ main {
     margin-left: 15px;
 }
 
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    height: 40px;
+    z-index: 99;
+    
+    border: none;
+    outline: none;
+    background-color: #000000A0;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 20px 0px;
+    display: none;
+}
 
-/*--------------------------------INTRO(index)----------------------------------------*/
+#topBtn:hover {
+    background-color: #000;
+}
+
+#topBtn:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    margin-left: -10px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 10px solid #000000A0;
+    bottom: 100%;
+}
+
+/*-------------------------- COMMON FOOTER ------------------------------*/
+
+footer {
+    margin-top: 50px;
+    background-color: black;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr .065fr 1fr;
+}
+
+.facebook {
+    background: url(images/facebook-icon_smaller.png) no-repeat;
+    width: 50px;
+    height: 51px;
+    grid-column: 1;
+    justify-self: end;
+    border-style: none;
+    cursor: pointer;
+}
+
+.linkedin {
+    background: url(images/linkedin-icon_smaller.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    grid-column: 2;
+    border-style: none;
+    cursor: pointer;
+}
+
+.github {
+    background: url(images/github-icon_smaller.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    grid-column: 3;
+    border-style: none;
+    cursor: pointer;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+/*-----------------------INTRO(index)-------------------------------*/
 
 #logo {
     position: absolute;
@@ -284,7 +357,7 @@ main {
 
 }
 
-/*--------------------------------PROJECTS------------------------------------------------*/
+/*---------------------------PROJECTS------------------------*/
 
 .intro_heading {
     grid-column: 2;
@@ -789,18 +862,12 @@ main {
     margin: 20px;
 }
 
-.figure {
+.figure_fox {
     background: url("background/fox_walk_sprite.svg") no-repeat;
     width: 135px;
     height: 150px;
     animation: walk 0.6s steps(5) infinite;
     transform: translate3D(100px, 150px, 0);
-}
-
-.figure2 {
-    background: url("background/bg7-01.png") no-repeat;
-    /*width: 135px;
-    height: 150px;*/
 }
 
 .forest1 {
@@ -857,7 +924,7 @@ main {
 
 
 
-/*------------------------------------------------ABOUT ME------------------------------------------------*/
+/*-------------------------------ABOUT ME-------------------------------*/
 
 .about_me_img {
     grid-column: 1 / 4;
@@ -905,43 +972,19 @@ main {
     margin-right: auto;
 }
 
-footer {
-    margin-top: 50px;
-    background-color: black;
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr .065fr 1fr;
-}
 
-.facebook {
-    background: url(images/facebook-icon_smaller.png) no-repeat;
-    width: 50px;
-    height: 51px;
-    grid-column: 1;
-    justify-self: end;
-    border-style: none;
-    cursor: pointer;
-}
-
-.linkedin {
-    background: url(images/linkedin-icon_smaller.png) no-repeat;
-    width: 50px;
-    height: 50px;
-    grid-column: 2;
-    border-style: none;
-    cursor: pointer;
-}
-
-.github {
-    background: url(images/github-icon_smaller.png) no-repeat;
-    width: 50px;
-    height: 50px;
-    grid-column: 3;
-    border-style: none;
-    cursor: pointer;
-    align-items: flex-start;
-    margin-left: 10px;
+/*------------------------------------------*/
+/*                HD resolution             */
+/*------------------------------------------*/
+@media only screen and (max-width: 1280px) {
+    .forest1,
+    .forest2,
+    .forest3,
+    .forest4,
+    .forest5,
+    .forest6 {
+        width: 100%;
+    }
 }
 
 /*------------------------------------------*/
@@ -993,7 +1036,7 @@ footer {
     .hex8 {
         display: none;
     }
-
+    
     /* ----- PROJECT BASIC WEB -------------*/
     .project_content {
         margin-top: 20px;
@@ -1003,8 +1046,6 @@ footer {
     .rw_screen1_1row {
         grid-column: 2 / 4;
         grid-row: 1;
-
-
     }
 
     .focus_2row {
@@ -1145,7 +1186,7 @@ footer {
 }
 
 /*------------------------------------------*/
-/*            MOBILE SMALL                    */
+/*            MOBILE SMALL                  */
 /*------------------------------------------*/
 @media only screen and (max-width: 480px) {
 
